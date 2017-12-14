@@ -1,11 +1,16 @@
-﻿  BlinkDetector.cpp
+﻿  main.cpp
 e:\opencv3.0\opencv\build\include\opencv2\core\mat.hpp(1965): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 e:\opencv3.0\opencv\build\include\opencv2\core\persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 e:\opencv3.0\opencv\build\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 e:\opencv3.0\opencv\build\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-e:\workspace\vs2015\blinkdetector\blinkdetector\blinkdetector.cpp(145): warning C4018: “<”: 有符号/无符号不匹配
-e:\workspace\vs2015\blinkdetector\blinkdetector\blinkdetector.cpp(173): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-e:\workspace\vs2015\blinkdetector\blinkdetector\blinkdetector.cpp(180): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  BlinkDetector.cpp
+e:\opencv3.0\opencv\build\include\opencv2\core\mat.hpp(1965): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\opencv3.0\opencv\build\include\opencv2\core\persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\opencv3.0\opencv\build\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\opencv3.0\opencv\build\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\workspace\vs2015\blinkdetector\blinkdetector\blinkdetector.cpp(154): warning C4018: “<”: 有符号/无符号不匹配
+e:\workspace\vs2015\blinkdetector\blinkdetector\blinkdetector.cpp(182): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+e:\workspace\vs2015\blinkdetector\blinkdetector\blinkdetector.cpp(189): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
 e:\microsoft visual studio 14.0\vc\include\numeric(20): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
   e:\microsoft visual studio 14.0\vc\include\numeric(30): note: 参见对正在编译的函数 模板 实例化“_Ty std::_Accumulate_unchecked<std::_Deque_unchecked_iterator<_Mydeque>,_Ty,_Fn2>(_InIt,_InIt,_Ty,_Fn2 &)”的引用
           with
@@ -22,19 +27,12 @@ e:\microsoft visual studio 14.0\vc\include\numeric(20): warning C4244: “=”: 
               _InIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,
               _Fn2=std::plus<void>
           ]
-  e:\workspace\vs2015\blinkdetector\blinkdetector\blinkdetector.cpp(122): note: 参见对正在编译的函数 模板 实例化“_Ty std::accumulate<std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,int>(_InIt,_InIt,_Ty)”的引用
+  e:\workspace\vs2015\blinkdetector\blinkdetector\blinkdetector.cpp(127): note: 参见对正在编译的函数 模板 实例化“_Ty std::accumulate<std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,int>(_InIt,_InIt,_Ty)”的引用
           with
           [
               _Ty=int,
               _InIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>
           ]
-  正在生成代码...
-  正在编译...
-  main.cpp
-e:\opencv3.0\opencv\build\include\opencv2\core\mat.hpp(1965): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-e:\opencv3.0\opencv\build\include\opencv2\core\persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-e:\opencv3.0\opencv\build\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-e:\opencv3.0\opencv\build\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
   正在生成代码...
   BlinkDetector.vcxproj -> E:\workspace\vs2015\BlinkDetector\Debug\BlinkDetector.exe
   BlinkDetector.vcxproj -> E:\workspace\vs2015\BlinkDetector\Debug\BlinkDetector.pdb (Full PDB)

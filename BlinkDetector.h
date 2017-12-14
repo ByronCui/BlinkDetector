@@ -8,14 +8,18 @@
 //#include <sstream>
 #include <deque>
 #include <numeric>
+#include <fstream>
 
 #define DEBUG
 
 class BlinkDetector
 {
 public:
-	explicit BlinkDetector(const std::string faceCascadeName, const std::string eyesCascadeName, const int itdf);
-	//~BlinkDetector();
+	explicit BlinkDetector(const std::string faceCascadeName,
+		const std::string eyesCascadeName,
+		const int itdf,
+		const std::string recordfile);
+	~BlinkDetector();
 	void start();
 
 private:
@@ -36,4 +40,6 @@ private:
 	//std::vector<std::pair<cv::Point, cv::Point>> eyesRoi;
 	const int intervalToDetectFace = 0;
 	std::deque<double> grayDeque;
+	std::ofstream record;
+	std::string recordFile;
 };

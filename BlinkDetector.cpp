@@ -1,15 +1,18 @@
 #include "BlinkDetector.h"
 
-BlinkDetector::BlinkDetector(const std::string faceCascadeName, const std::string eyesCascadeName, int itdf) :intervalToDetectFace(itdf)
+BlinkDetector::BlinkDetector(const std::string faceCascadeName, const std::string eyesCascadeName, int itdf, const std::string recordfile) :intervalToDetectFace(itdf), recordFile(recordfile)
 {
 	cameraInit();
 	setCascade(faceCascadeName, eyesCascadeName);
+	record.open(recordFile, std::ofstream::app);
 }
 
-//BlinkDetector::~BlinkDetector()
-//{
-//	exit(0);
-//}
+BlinkDetector::~BlinkDetector()
+{
+	std::cout << "Îö¹¹¿ªÊ¼" << std::endl;
+	record.close();
+	std::cout << "Îö¹¹½áÊø" << std::endl;
+}
 
 
 void BlinkDetector::start()
@@ -58,6 +61,8 @@ void BlinkDetector::start()
 		if (timeToDetectFace == intervalToDetectFace)
 		{
 			faceRect = detectFace(frameGray);
+			record.close();
+			record.open(recordFile, std::ofstream::app);
 			if (faceRect.height == 0 && preFaceRect.height == 0)
 			{
 #ifdef DEBUG
@@ -128,12 +133,16 @@ void BlinkDetector::start()
 					if (pretime_blink != 0 && abs(curtime_blink - pretime_blink) > 300)
 					{
 						std::cout << "Õ£ÑÛ" << x << std::endl;
+						record << "Õ£ÑÛ";
+						record << clock() << " ";
 						++x;
 						pretime_blink = curtime_blink;
 					}
 					else if(pretime_blink == 0)
 					{
 						std::cout << "Õ£ÑÛ" << x << std::endl;
+						record << "Õ£ÑÛ";
+						record << clock() << " ";
 						++x;
 						pretime_blink = curtime_blink;
 					}

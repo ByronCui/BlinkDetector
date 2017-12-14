@@ -10,6 +10,8 @@ using namespace std;
 using namespace cv;
 
 
+
+
 int main()
 {
 	////Mat img = imread("womanWithGlasses.jpg");
@@ -115,6 +117,8 @@ int main()
 	const string faceCascadeName = "haarcascades\\haarcascade_frontalface_alt.xml";
 	const string eyesCascadeName = "haarcascades\\haarcascade_eye_tree_eyeglasses.xml";
 	//const string eyesCascadeName = "haarcascades\\haarcascade_lefteye_2splits.xml";
-	BlinkDetector *BD = new BlinkDetector(faceCascadeName, eyesCascadeName, 100);
+	BlinkDetector *BD = new BlinkDetector(faceCascadeName, eyesCascadeName, 100, "test.txt");
 	BD->start();
+	system("pause");
+	return 0;
 }
